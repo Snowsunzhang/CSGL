@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SupermarketModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="guoqishanpin">
+    <Key>
+      <PropertyRef Name="sno" />
+    </Key>
+    <Property Name="sno" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="clfs" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="number" Type="int" Nullable="false" />
+    <Property Name="gqrq" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="clrq" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="jbr" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="spr" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="gys">
+    <Key>
+      <PropertyRef Name="gname" />
+    </Key>
+    <Property Name="gname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="glxr" Type="varchar" MaxLength="20" />
+    <Property Name="glxfs" Type="varchar" MaxLength="15" />
+    <Property Name="bz" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="jinhuo">
+    <Key>
+      <PropertyRef Name="s" />
+    </Key>
+    <Property Name="no" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="sno" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="snum" Type="int" Nullable="false" />
+    <Property Name="price" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="date1" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="date2" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="date3" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="scome" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="sperson" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="s" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="shangpin">
+    <Key>
+      <PropertyRef Name="sno" />
+    </Key>
+    <Property Name="sno" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="sname" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="sdate" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="sleibie" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="sjinjia" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="sshoujia" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="sdanwei" Type="varchar" MaxLength="10" />
+    <Property Name="sbaozhiqi" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="shave" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="shouhuo">
+    <Key>
+      <PropertyRef Name="no" />
+    </Key>
+    <Property Name="no" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="sno" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="snum" Type="int" Nullable="false" />
+    <Property Name="price" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+    <Property Name="outdate" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="sperson" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="sum1" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tuihuo">
+    <Key>
+      <PropertyRef Name="no" />
+      <PropertyRef Name="sno" />
+    </Key>
+    <Property Name="no" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="sno" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="num" Type="int" Nullable="false" />
+    <Property Name="tuidate" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="jbr" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="spr" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="tkje" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="uname" />
+    </Key>
+    <Property Name="uname" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="usex" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="uage" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="uphone" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="uadress" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ubeizhu" Type="varchar" MaxLength="90" Nullable="false" />
+    <Property Name="upassword" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__guoqishanpi__sno__09DE7BCC">
+    <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+    <End Role="guoqishanpin" Type="Self.guoqishanpin" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="shangpin">
+        <PropertyRef Name="sno" />
+      </Principal>
+      <Dependent Role="guoqishanpin">
+        <PropertyRef Name="sno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__jinhuo__sno__1920BF5C">
+    <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+    <End Role="jinhuo" Type="Self.jinhuo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="shangpin">
+        <PropertyRef Name="sno" />
+      </Principal>
+      <Dependent Role="jinhuo">
+        <PropertyRef Name="sno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__shouhuo__sno__1DE57479">
+    <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+    <End Role="shouhuo" Type="Self.shouhuo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="shangpin">
+        <PropertyRef Name="sno" />
+      </Principal>
+      <Dependent Role="shouhuo">
+        <PropertyRef Name="sno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tuihuo__no__239E4DCF">
+    <End Role="shouhuo" Type="Self.shouhuo" Multiplicity="1" />
+    <End Role="tuihuo" Type="Self.tuihuo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="shouhuo">
+        <PropertyRef Name="no" />
+      </Principal>
+      <Dependent Role="tuihuo">
+        <PropertyRef Name="no" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tuihuo__sno__22AA2996">
+    <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+    <End Role="tuihuo" Type="Self.tuihuo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="shangpin">
+        <PropertyRef Name="sno" />
+      </Principal>
+      <Dependent Role="tuihuo">
+        <PropertyRef Name="sno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SupermarketModelStoreContainer">
+    <EntitySet Name="guoqishanpin" EntityType="Self.guoqishanpin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="gys" EntityType="Self.gys" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="jinhuo" EntityType="Self.jinhuo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="shangpin" EntityType="Self.shangpin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="shouhuo" EntityType="Self.shouhuo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tuihuo" EntityType="Self.tuihuo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__guoqishanpi__sno__09DE7BCC" Association="Self.FK__guoqishanpi__sno__09DE7BCC">
+      <End Role="shangpin" EntitySet="shangpin" />
+      <End Role="guoqishanpin" EntitySet="guoqishanpin" />
+    </AssociationSet>
+    <AssociationSet Name="FK__jinhuo__sno__1920BF5C" Association="Self.FK__jinhuo__sno__1920BF5C">
+      <End Role="shangpin" EntitySet="shangpin" />
+      <End Role="jinhuo" EntitySet="jinhuo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__shouhuo__sno__1DE57479" Association="Self.FK__shouhuo__sno__1DE57479">
+      <End Role="shangpin" EntitySet="shangpin" />
+      <End Role="shouhuo" EntitySet="shouhuo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tuihuo__no__239E4DCF" Association="Self.FK__tuihuo__no__239E4DCF">
+      <End Role="shouhuo" EntitySet="shouhuo" />
+      <End Role="tuihuo" EntitySet="tuihuo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tuihuo__sno__22AA2996" Association="Self.FK__tuihuo__sno__22AA2996">
+      <End Role="shangpin" EntitySet="shangpin" />
+      <End Role="tuihuo" EntitySet="tuihuo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

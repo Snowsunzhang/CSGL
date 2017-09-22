@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF81A92C-B549-449A-A38C-7CF0AC258128}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChaoShi</RootNamespace>
+    <AssemblyName>ChaoShi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.9.0.5, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.9.0.5, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=12.9.0.5, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=12.9.0.5, Culture=neutral, PublicKeyToken=f90dc37c26666a67" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chaxun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chaxun.Designer.cs">
+      <DependentUpon>chaxun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxgys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxgys.Designer.cs">
+      <DependentUpon>cxgys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxjhd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxjhd.Designer.cs">
+      <DependentUpon>cxjhd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxshd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxshd.Designer.cs">
+      <DependentUpon>cxshd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="glspxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="glspxx.Designer.cs">
+      <DependentUpon>glspxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="index2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index2.Designer.cs">
+      <DependentUpon>index2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jhd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jhd.Designer.cs">
+      <DependentUpon>jhd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kc.Designer.cs">
+      <DependentUpon>kc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kcgl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kcgl.Designer.cs">
+      <DependentUpon>kcgl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jhgl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jhgl.Designer.cs">
+      <DependentUpon>jhgl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="khgl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="khgl.Designer.cs">
+      <DependentUpon>khgl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qhyh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qhyh.Designer.cs">
+      <DependentUpon>qhyh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScoreDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shd.Designer.cs">
+      <DependentUpon>shd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjgys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjgys.Designer.cs">
+      <DependentUpon>tjgys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjspxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjspxx.Designer.cs">
+      <DependentUpon>tjspxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tjygxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tjygxx.Designer.cs">
+      <DependentUpon>tjygxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xgmm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xgmm.Designer.cs">
+      <DependentUpon>xgmm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xgspxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xgspxx.Designer.cs">
+      <DependentUpon>xgspxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiugai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiugai.Designer.cs">
+      <DependentUpon>xiugai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xiugai2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xiugai2.Designer.cs">
+      <DependentUpon>xiugai2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zdgl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zdgl.Designer.cs">
+      <DependentUpon>zdgl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="chaxun.resx">
+      <DependentUpon>chaxun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxgys.resx">
+      <DependentUpon>cxgys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxjhd.resx">
+      <DependentUpon>cxjhd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxshd.resx">
+      <DependentUpon>cxshd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="glspxx.resx">
+      <DependentUpon>glspxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index2.resx">
+      <DependentUpon>index2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jhd.resx">
+      <DependentUpon>jhd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jhgl.resx">
+      <DependentUpon>jhgl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kc.resx">
+      <DependentUpon>kc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kcgl.resx">
+      <DependentUpon>kcgl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="khgl.resx">
+      <DependentUpon>khgl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="qhyh.resx">
+      <DependentUpon>qhyh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shd.resx">
+      <DependentUpon>shd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjgys.resx">
+      <DependentUpon>tjgys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjspxx.resx">
+      <DependentUpon>tjspxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tjygxx.resx">
+      <DependentUpon>tjygxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xgmm.resx">
+      <DependentUpon>xgmm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xgspxx.resx">
+      <DependentUpon>xgspxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiugai.resx">
+      <DependentUpon>xiugai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xiugai2.resx">
+      <DependentUpon>xiugai2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zdgl.resx">
+      <DependentUpon>zdgl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ScoreDataSet.xsc">
+      <DependentUpon>ScoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ScoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScoreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ScoreDataSet.xss">
+      <DependentUpon>ScoreDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBCL2\DBCL2.csproj">
+      <Project>{79a62674-a71a-46f1-9060-b777b8602aee}</Project>
+      <Name>DBCL2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

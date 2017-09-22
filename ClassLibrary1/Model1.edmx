@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SupermarketModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="guoqishanpin">
+          <Key>
+            <PropertyRef Name="sno" />
+          </Key>
+          <Property Name="sno" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="clfs" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="number" Type="int" Nullable="false" />
+          <Property Name="gqrq" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="clrq" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="jbr" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="spr" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="jinhuo">
+          <Key>
+            <PropertyRef Name="no" />
+          </Key>
+          <Property Name="no" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="sno" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="snum" Type="int" Nullable="false" />
+          <Property Name="price" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+          <Property Name="date1" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="date2" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="date3" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="scome" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="sperson" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="shangpin">
+          <Key>
+            <PropertyRef Name="sno" />
+          </Key>
+          <Property Name="sno" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="sname" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="sdate" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="sleibie" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="sjinjia" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="sshoujia" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="sdanwei" Type="varchar" MaxLength="10" />
+          <Property Name="sbaozhiqi" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="shave" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="shouhuo">
+          <Key>
+            <PropertyRef Name="no" />
+          </Key>
+          <Property Name="no" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="sno" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="snum" Type="int" Nullable="false" />
+          <Property Name="price" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+          <Property Name="outdate" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="sperson" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="sum1" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tuihuo">
+          <Key>
+            <PropertyRef Name="no" />
+            <PropertyRef Name="sno" />
+          </Key>
+          <Property Name="no" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="sno" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="num" Type="int" Nullable="false" />
+          <Property Name="tuidate" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="jbr" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="spr" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="tkje" Type="numeric" Precision="8" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="uname" />
+          </Key>
+          <Property Name="uname" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="usex" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="uage" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="uphone" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="uadress" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ubeizhu" Type="varchar" MaxLength="90" Nullable="false" />
+          <Property Name="upassword" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__guoqishanpi__sno__09DE7BCC">
+          <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+          <End Role="guoqishanpin" Type="Self.guoqishanpin" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="shangpin">
+              <PropertyRef Name="sno" />
+            </Principal>
+            <Dependent Role="guoqishanpin">
+              <PropertyRef Name="sno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__jinhuo__sno__1920BF5C">
+          <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+          <End Role="jinhuo" Type="Self.jinhuo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shangpin">
+              <PropertyRef Name="sno" />
+            </Principal>
+            <Dependent Role="jinhuo">
+              <PropertyRef Name="sno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__shouhuo__sno__1DE57479">
+          <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+          <End Role="shouhuo" Type="Self.shouhuo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shangpin">
+              <PropertyRef Name="sno" />
+            </Principal>
+            <Dependent Role="shouhuo">
+              <PropertyRef Name="sno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tuihuo__no__239E4DCF">
+          <End Role="shouhuo" Type="Self.shouhuo" Multiplicity="1" />
+          <End Role="tuihuo" Type="Self.tuihuo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shouhuo">
+              <PropertyRef Name="no" />
+            </Principal>
+            <Dependent Role="tuihuo">
+              <PropertyRef Name="no" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tuihuo__sno__22AA2996">
+          <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+          <End Role="tuihuo" Type="Self.tuihuo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shangpin">
+              <PropertyRef Name="sno" />
+            </Principal>
+            <Dependent Role="tuihuo">
+              <PropertyRef Name="sno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SupermarketModelStoreContainer">
+          <EntitySet Name="guoqishanpin" EntityType="Self.guoqishanpin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="jinhuo" EntityType="Self.jinhuo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="shangpin" EntityType="Self.shangpin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="shouhuo" EntityType="Self.shouhuo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tuihuo" EntityType="Self.tuihuo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__guoqishanpi__sno__09DE7BCC" Association="Self.FK__guoqishanpi__sno__09DE7BCC">
+            <End Role="shangpin" EntitySet="shangpin" />
+            <End Role="guoqishanpin" EntitySet="guoqishanpin" />
+          </AssociationSet>
+          <AssociationSet Name="FK__jinhuo__sno__1920BF5C" Association="Self.FK__jinhuo__sno__1920BF5C">
+            <End Role="shangpin" EntitySet="shangpin" />
+            <End Role="jinhuo" EntitySet="jinhuo" />
+          </AssociationSet>
+          <AssociationSet Name="FK__shouhuo__sno__1DE57479" Association="Self.FK__shouhuo__sno__1DE57479">
+            <End Role="shangpin" EntitySet="shangpin" />
+            <End Role="shouhuo" EntitySet="shouhuo" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tuihuo__no__239E4DCF" Association="Self.FK__tuihuo__no__239E4DCF">
+            <End Role="shouhuo" EntitySet="shouhuo" />
+            <End Role="tuihuo" EntitySet="tuihuo" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tuihuo__sno__22AA2996" Association="Self.FK__tuihuo__sno__22AA2996">
+            <End Role="shangpin" EntitySet="shangpin" />
+            <End Role="tuihuo" EntitySet="tuihuo" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SupermarketModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="guoqishanpin">
+          <Key>
+            <PropertyRef Name="sno" />
+          </Key>
+          <Property Name="sno" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="clfs" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="number" Type="Int32" Nullable="false" />
+          <Property Name="gqrq" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="clrq" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="jbr" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="spr" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="shangpin" Relationship="Self.FK__guoqishanpi__sno__09DE7BCC" FromRole="guoqishanpin" ToRole="shangpin" />
+        </EntityType>
+        <EntityType Name="jinhuo">
+          <Key>
+            <PropertyRef Name="no" />
+          </Key>
+          <Property Name="no" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sno" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="snum" Type="Int32" Nullable="false" />
+          <Property Name="price" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+          <Property Name="date1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="date2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="date3" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="scome" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sperson" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="shangpin" Relationship="Self.FK__jinhuo__sno__1920BF5C" FromRole="jinhuo" ToRole="shangpin" />
+        </EntityType>
+        <EntityType Name="shangpin">
+          <Key>
+            <PropertyRef Name="sno" />
+          </Key>
+          <Property Name="sno" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sdate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sleibie" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sjinjia" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sshoujia" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sdanwei" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="sbaozhiqi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="shave" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="guoqishanpin" Relationship="Self.FK__guoqishanpi__sno__09DE7BCC" FromRole="shangpin" ToRole="guoqishanpin" />
+          <NavigationProperty Name="jinhuos" Relationship="Self.FK__jinhuo__sno__1920BF5C" FromRole="shangpin" ToRole="jinhuo" />
+          <NavigationProperty Name="shouhuos" Relationship="Self.FK__shouhuo__sno__1DE57479" FromRole="shangpin" ToRole="shouhuo" />
+          <NavigationProperty Name="tuihuos" Relationship="Self.FK__tuihuo__sno__22AA2996" FromRole="shangpin" ToRole="tuihuo" />
+        </EntityType>
+        <EntityType Name="shouhuo">
+          <Key>
+            <PropertyRef Name="no" />
+          </Key>
+          <Property Name="no" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sno" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="snum" Type="Int32" Nullable="false" />
+          <Property Name="price" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+          <Property Name="outdate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sperson" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sum1" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+          <NavigationProperty Name="shangpin" Relationship="Self.FK__shouhuo__sno__1DE57479" FromRole="shouhuo" ToRole="shangpin" />
+          <NavigationProperty Name="tuihuos" Relationship="Self.FK__tuihuo__no__239E4DCF" FromRole="shouhuo" ToRole="tuihuo" />
+        </EntityType>
+        <EntityType Name="tuihuo">
+          <Key>
+            <PropertyRef Name="no" />
+            <PropertyRef Name="sno" />
+          </Key>
+          <Property Name="no" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sno" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="num" Type="Int32" Nullable="false" />
+          <Property Name="tuidate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="jbr" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="spr" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tkje" Type="Decimal" Precision="8" Scale="2" Nullable="false" />
+          <NavigationProperty Name="shangpin" Relationship="Self.FK__tuihuo__sno__22AA2996" FromRole="tuihuo" ToRole="shangpin" />
+          <NavigationProperty Name="shouhuo" Relationship="Self.FK__tuihuo__no__239E4DCF" FromRole="tuihuo" ToRole="shouhuo" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="uname" />
+          </Key>
+          <Property Name="uname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usex" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="uage" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="uphone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="uadress" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ubeizhu" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="upassword" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__guoqishanpi__sno__09DE7BCC">
+          <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+          <End Role="guoqishanpin" Type="Self.guoqishanpin" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="shangpin">
+              <PropertyRef Name="sno" />
+            </Principal>
+            <Dependent Role="guoqishanpin">
+              <PropertyRef Name="sno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__jinhuo__sno__1920BF5C">
+          <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+          <End Role="jinhuo" Type="Self.jinhuo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shangpin">
+              <PropertyRef Name="sno" />
+            </Principal>
+            <Dependent Role="jinhuo">
+              <PropertyRef Name="sno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__shouhuo__sno__1DE57479">
+          <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+          <End Role="shouhuo" Type="Self.shouhuo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shangpin">
+              <PropertyRef Name="sno" />
+            </Principal>
+            <Dependent Role="shouhuo">
+              <PropertyRef Name="sno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tuihuo__sno__22AA2996">
+          <End Role="shangpin" Type="Self.shangpin" Multiplicity="1" />
+          <End Role="tuihuo" Type="Self.tuihuo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shangpin">
+              <PropertyRef Name="sno" />
+            </Principal>
+            <Dependent Role="tuihuo">
+              <PropertyRef Name="sno" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tuihuo__no__239E4DCF">
+          <End Role="shouhuo" Type="Self.shouhuo" Multiplicity="1" />
+          <End Role="tuihuo" Type="Self.tuihuo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="shouhuo">
+              <PropertyRef Name="no" />
+            </Principal>
+            <Dependent Role="tuihuo">
+              <PropertyRef Name="no" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SupermarketEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="guoqishanpins" EntityType="Self.guoqishanpin" />
+          <EntitySet Name="jinhuos" EntityType="Self.jinhuo" />
+          <EntitySet Name="shangpins" EntityType="Self.shangpin" />
+          <EntitySet Name="shouhuos" EntityType="Self.shouhuo" />
+          <EntitySet Name="tuihuos" EntityType="Self.tuihuo" />
+          <EntitySet Name="users" EntityType="Self.user" />
+          <AssociationSet Name="FK__guoqishanpi__sno__09DE7BCC" Association="Self.FK__guoqishanpi__sno__09DE7BCC">
+            <End Role="shangpin" EntitySet="shangpins" />
+            <End Role="guoqishanpin" EntitySet="guoqishanpins" />
+          </AssociationSet>
+          <AssociationSet Name="FK__jinhuo__sno__1920BF5C" Association="Self.FK__jinhuo__sno__1920BF5C">
+            <End Role="shangpin" EntitySet="shangpins" />
+            <End Role="jinhuo" EntitySet="jinhuos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__shouhuo__sno__1DE57479" Association="Self.FK__shouhuo__sno__1DE57479">
+            <End Role="shangpin" EntitySet="shangpins" />
+            <End Role="shouhuo" EntitySet="shouhuos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tuihuo__sno__22AA2996" Association="Self.FK__tuihuo__sno__22AA2996">
+            <End Role="shangpin" EntitySet="shangpins" />
+            <End Role="tuihuo" EntitySet="tuihuos" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tuihuo__no__239E4DCF" Association="Self.FK__tuihuo__no__239E4DCF">
+            <End Role="shouhuo" EntitySet="shouhuos" />
+            <End Role="tuihuo" EntitySet="tuihuos" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SupermarketModelStoreContainer" CdmEntityContainer="SupermarketEntities">
+          <EntitySetMapping Name="guoqishanpins">
+            <EntityTypeMapping TypeName="SupermarketModel.guoqishanpin">
+              <MappingFragment StoreEntitySet="guoqishanpin">
+                <ScalarProperty Name="sno" ColumnName="sno" />
+                <ScalarProperty Name="clfs" ColumnName="clfs" />
+                <ScalarProperty Name="number" ColumnName="number" />
+                <ScalarProperty Name="gqrq" ColumnName="gqrq" />
+                <ScalarProperty Name="clrq" ColumnName="clrq" />
+                <ScalarProperty Name="jbr" ColumnName="jbr" />
+                <ScalarProperty Name="spr" ColumnName="spr" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="jinhuos">
+            <EntityTypeMapping TypeName="SupermarketModel.jinhuo">
+              <MappingFragment StoreEntitySet="jinhuo">
+                <ScalarProperty Name="no" ColumnName="no" />
+                <ScalarProperty Name="sno" ColumnName="sno" />
+                <ScalarProperty Name="snum" ColumnName="snum" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="date1" ColumnName="date1" />
+                <ScalarProperty Name="date2" ColumnName="date2" />
+                <ScalarProperty Name="date3" ColumnName="date3" />
+                <ScalarProperty Name="scome" ColumnName="scome" />
+                <ScalarProperty Name="sperson" ColumnName="sperson" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="shangpins">
+            <EntityTypeMapping TypeName="SupermarketModel.shangpin">
+              <MappingFragment StoreEntitySet="shangpin">
+                <ScalarProperty Name="sno" ColumnName="sno" />
+                <ScalarProperty Name="sname" ColumnName="sname" />
+                <ScalarProperty Name="sdate" ColumnName="sdate" />
+                <ScalarProperty Name="sleibie" ColumnName="sleibie" />
+                <ScalarProperty Name="sjinjia" ColumnName="sjinjia" />
+                <ScalarProperty Name="sshoujia" ColumnName="sshoujia" />
+                <ScalarProperty Name="sdanwei" ColumnName="sdanwei" />
+                <ScalarProperty Name="sbaozhiqi" ColumnName="sbaozhiqi" />
+                <ScalarProperty Name="shave" ColumnName="shave" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="shouhuos">
+            <EntityTypeMapping TypeName="SupermarketModel.shouhuo">
+              <MappingFragment StoreEntitySet="shouhuo">
+                <ScalarProperty Name="no" ColumnName="no" />
+                <ScalarProperty Name="sno" ColumnName="sno" />
+                <ScalarProperty Name="snum" ColumnName="snum" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="outdate" ColumnName="outdate" />
+                <ScalarProperty Name="sperson" ColumnName="sperson" />
+                <ScalarProperty Name="sum1" ColumnName="sum1" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tuihuos">
+            <EntityTypeMapping TypeName="SupermarketModel.tuihuo">
+              <MappingFragment StoreEntitySet="tuihuo">
+                <ScalarProperty Name="no" ColumnName="no" />
+                <ScalarProperty Name="sno" ColumnName="sno" />
+                <ScalarProperty Name="num" ColumnName="num" />
+                <ScalarProperty Name="tuidate" ColumnName="tuidate" />
+                <ScalarProperty Name="jbr" ColumnName="jbr" />
+                <ScalarProperty Name="spr" ColumnName="spr" />
+                <ScalarProperty Name="tkje" ColumnName="tkje" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="SupermarketModel.user">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="uname" ColumnName="uname" />
+                <ScalarProperty Name="usex" ColumnName="usex" />
+                <ScalarProperty Name="uage" ColumnName="uage" />
+                <ScalarProperty Name="uphone" ColumnName="uphone" />
+                <ScalarProperty Name="uadress" ColumnName="uadress" />
+                <ScalarProperty Name="ubeizhu" ColumnName="ubeizhu" />
+                <ScalarProperty Name="upassword" ColumnName="upassword" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

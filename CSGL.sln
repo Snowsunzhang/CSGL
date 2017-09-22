@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaoShi", "ChaoShi\ChaoShi.csproj", "{BF81A92C-B549-449A-A38C-7CF0AC258128}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBCL2", "DBCL2\DBCL2.csproj", "{79A62674-A71A-46F1-9060-B777B8602AEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF81A92C-B549-449A-A38C-7CF0AC258128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF81A92C-B549-449A-A38C-7CF0AC258128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF81A92C-B549-449A-A38C-7CF0AC258128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF81A92C-B549-449A-A38C-7CF0AC258128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79A62674-A71A-46F1-9060-B777B8602AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A62674-A71A-46F1-9060-B777B8602AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A62674-A71A-46F1-9060-B777B8602AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A62674-A71A-46F1-9060-B777B8602AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

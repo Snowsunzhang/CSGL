@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SupermarketModelStoreContainer" CdmEntityContainer="SupermarketEntities">
+    <EntitySetMapping Name="guoqishanpins">
+      <EntityTypeMapping TypeName="SupermarketModel.guoqishanpin">
+        <MappingFragment StoreEntitySet="guoqishanpin">
+          <ScalarProperty Name="sno" ColumnName="sno" />
+          <ScalarProperty Name="clfs" ColumnName="clfs" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="gqrq" ColumnName="gqrq" />
+          <ScalarProperty Name="clrq" ColumnName="clrq" />
+          <ScalarProperty Name="jbr" ColumnName="jbr" />
+          <ScalarProperty Name="spr" ColumnName="spr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gys">
+      <EntityTypeMapping TypeName="SupermarketModel.gy">
+        <MappingFragment StoreEntitySet="gys">
+          <ScalarProperty Name="gname" ColumnName="gname" />
+          <ScalarProperty Name="glxr" ColumnName="glxr" />
+          <ScalarProperty Name="glxfs" ColumnName="glxfs" />
+          <ScalarProperty Name="bz" ColumnName="bz" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jinhuos">
+      <EntityTypeMapping TypeName="SupermarketModel.jinhuo">
+        <MappingFragment StoreEntitySet="jinhuo">
+          <ScalarProperty Name="no" ColumnName="no" />
+          <ScalarProperty Name="sno" ColumnName="sno" />
+          <ScalarProperty Name="snum" ColumnName="snum" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="date1" ColumnName="date1" />
+          <ScalarProperty Name="date2" ColumnName="date2" />
+          <ScalarProperty Name="date3" ColumnName="date3" />
+          <ScalarProperty Name="scome" ColumnName="scome" />
+          <ScalarProperty Name="sperson" ColumnName="sperson" />
+          <ScalarProperty Name="s" ColumnName="s" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="shangpins">
+      <EntityTypeMapping TypeName="SupermarketModel.shangpin">
+        <MappingFragment StoreEntitySet="shangpin">
+          <ScalarProperty Name="sno" ColumnName="sno" />
+          <ScalarProperty Name="sname" ColumnName="sname" />
+          <ScalarProperty Name="sdate" ColumnName="sdate" />
+          <ScalarProperty Name="sleibie" ColumnName="sleibie" />
+          <ScalarProperty Name="sjinjia" ColumnName="sjinjia" />
+          <ScalarProperty Name="sshoujia" ColumnName="sshoujia" />
+          <ScalarProperty Name="sdanwei" ColumnName="sdanwei" />
+          <ScalarProperty Name="sbaozhiqi" ColumnName="sbaozhiqi" />
+          <ScalarProperty Name="shave" ColumnName="shave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="shouhuos">
+      <EntityTypeMapping TypeName="SupermarketModel.shouhuo">
+        <MappingFragment StoreEntitySet="shouhuo">
+          <ScalarProperty Name="no" ColumnName="no" />
+          <ScalarProperty Name="sno" ColumnName="sno" />
+          <ScalarProperty Name="snum" ColumnName="snum" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="outdate" ColumnName="outdate" />
+          <ScalarProperty Name="sperson" ColumnName="sperson" />
+          <ScalarProperty Name="sum1" ColumnName="sum1" />
+          <ScalarProperty Name="a" ColumnName="a" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="SupermarketModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="uname" ColumnName="uname" />
+          <ScalarProperty Name="usex" ColumnName="usex" />
+          <ScalarProperty Name="uage" ColumnName="uage" />
+          <ScalarProperty Name="uphone" ColumnName="uphone" />
+          <ScalarProperty Name="uadress" ColumnName="uadress" />
+          <ScalarProperty Name="ubeizhu" ColumnName="ubeizhu" />
+          <ScalarProperty Name="upassword" ColumnName="upassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,11 @@
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\bin\Debug\DBCL2.dll.config
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\bin\Debug\DBCL2.dll
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\bin\Debug\DBCL2.pdb
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\bin\Debug\EntityFramework.dll
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\bin\Debug\EntityFramework.SqlServer.dll
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\bin\Debug\EntityFramework.xml
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\bin\Debug\EntityFramework.SqlServer.xml
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\obj\Debug\DBCL2.csprojResolveAssemblyReference.cache
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\obj\Debug\DBCL2.dll
+D:\zxq\大三上\人机交互--杨子光\CSGL\DBCL2\obj\Debug\DBCL2.pdb

@@ -1,0 +1,100 @@
+d:\users\zxq\documents\visual studio 2013\Projects\CSGL\ChaoShi\bin\Debug\ChaoShi.exe.config
+d:\users\zxq\documents\visual studio 2013\Projects\CSGL\ChaoShi\bin\Debug\ChaoShi.exe
+d:\users\zxq\documents\visual studio 2013\Projects\CSGL\ChaoShi\bin\Debug\ChaoShi.pdb
+d:\users\zxq\documents\visual studio 2013\Projects\CSGL\ChaoShi\obj\Debug\ChaoShi.csprojResolveAssemblyReference.cache
+d:\users\zxq\documents\visual studio 2013\Projects\CSGL\ChaoShi\obj\Debug\ChaoShi.Properties.Resources.resources
+d:\users\zxq\documents\visual studio 2013\Projects\CSGL\ChaoShi\obj\Debug\ChaoShi.csproj.GenerateResource.Cache
+d:\users\zxq\documents\visual studio 2013\Projects\CSGL\ChaoShi\obj\Debug\ChaoShi.exe
+d:\users\zxq\documents\visual studio 2013\Projects\CSGL\ChaoShi\obj\Debug\ChaoShi.pdb
+d:\users\zxq\documents\visual studio 2013\Projects\CSGL\ChaoShi\obj\Debug\ChaoShi.Login.resources
+d:\users\zxq\documents\visual studio 2013\Projects\CSGL\ChaoShi\obj\Debug\ChaoShi.index.resources
+D:\c#\CSGL\ChaoShi\bin\Debug\ChaoShi.exe.config
+D:\c#\CSGL\ChaoShi\obj\Debug\ChaoShi.exe
+D:\c#\CSGL\ChaoShi\obj\Debug\ChaoShi.pdb
+D:\c#\CSGL\ChaoShi\bin\Debug\ChaoShi.exe
+D:\c#\CSGL\ChaoShi\bin\Debug\ChaoShi.pdb
+D:\c#\CSGL\ChaoShi\obj\Debug\ChaoShi.csprojResolveAssemblyReference.cache
+D:\c#\CSGL\ChaoShi\obj\Debug\ChaoShi.index.resources
+D:\c#\CSGL\ChaoShi\obj\Debug\ChaoShi.Login.resources
+D:\c#\CSGL\ChaoShi\obj\Debug\ChaoShi.Properties.Resources.resources
+D:\c#\CSGL\ChaoShi\obj\Debug\ChaoShi.csproj.GenerateResource.Cache
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\bin\Debug\ChaoShi.exe.config
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.exe
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.pdb
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\bin\Debug\ChaoShi.exe
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\bin\Debug\ChaoShi.pdb
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.csprojResolveAssemblyReference.cache
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.index.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.Login.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.Properties.Resources.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.csproj.GenerateResource.Cache
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.Form2.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.xgmm.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.jhgl.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.kcgl.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.khgl.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.qhyh.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.zdgl.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\bin\Debug\EntityFramework.dll
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\bin\Debug\EntityFramework.SqlServer.dll
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\bin\Debug\EntityFramework.xml
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\bin\Debug\EntityFramework.SqlServer.xml
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.tjygxx.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.index2.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.xiugai.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.chaxun.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.Form3.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.xiugai2.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.tjgys.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.cxgys.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.tjspxx.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.glspxx.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.kc.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.xgspxx.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.jhd.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\bin\Debug\DBCL2.dll
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\bin\Debug\DBCL2.pdb
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.shd.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.cxjhd.resources
+D:\zxq\大三上\人机交互--杨子光\CSGL\ChaoShi\obj\Debug\ChaoShi.cxshd.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\bin\Debug\ChaoShi.exe.config
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.exe
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.pdb
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\bin\Debug\ChaoShi.exe
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\bin\Debug\ChaoShi.pdb
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\bin\Debug\DBCL2.dll
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\bin\Debug\EntityFramework.dll
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\bin\Debug\EntityFramework.SqlServer.dll
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\bin\Debug\DBCL2.pdb
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\bin\Debug\EntityFramework.xml
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\bin\Debug\EntityFramework.SqlServer.xml
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.csprojResolveAssemblyReference.cache
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.chaxun.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.cxgys.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.cxjhd.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.cxshd.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.Form2.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.Form3.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.glspxx.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.index.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.index2.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.jhd.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.jhgl.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.kc.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.kcgl.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.khgl.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.Login.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.Properties.Resources.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.qhyh.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.shd.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.tjgys.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.tjspxx.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.tjygxx.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.xgmm.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.xgspxx.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.xiugai.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.xiugai2.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.zdgl.resources
+D:\zxq\大三上\杨老师三项大作业要求(2017.1.11前发给我)\杨老师三项大作业要求\！人机交互实验和大作业要求\20142992张雪晴\CS结构用户界面设计源程序\CSGL\ChaoShi\obj\Debug\ChaoShi.csproj.GenerateResource.Cache
